@@ -1,0 +1,9 @@
+import { {{name}}Contract } from "@ioc:Services/{{name}}";
+
+export class {{name}} implements {{name}}Contract {
+  
+  example() {
+    return 'example';
+  }
+
+}

@@ -1,0 +1,27 @@
+import { ApplicationContract } from "@ioc:Adonis/Core/Application";
+import { {{name}} } from "App/Services/{{name}}";
+
+export default class {{name}}Provider {
+  public static needsApplication = true;
+
+  constructor(protected app: ApplicationContract) {}
+
+  public register() {
+    this.app.container.bind("@ioc:Services/{{name}}", () => {
+      return new {{name}}();
+    });
+
+  }
+
+  public async boot() {
+    // IoC container is ready
+  }
+
+  public async ready() {
+    // App is ready
+  }
+
+  public async shutdown() {
+    // Cleanup, since app is going down
+  }
+}

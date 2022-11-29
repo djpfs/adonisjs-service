@@ -1,0 +1,11 @@
+declare module "@ioc:Services/{{name}}" {
+  
+  export interface {{name}}Contract {
+    example(): string
+  }
+
+  const {{name}}: {{name}}Contract;
+
+  export default {{name}};
+
+}
