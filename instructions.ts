@@ -2,8 +2,11 @@ import * as sinkStatic from '@adonisjs/sink'
 import { ApplicationContract } from '@ioc:Adonis/Core/Application'
 import fs from 'fs'
 
-
-export default async function instructions(projectRoot: string, app: ApplicationContract, { logger }: typeof sinkStatic) {
+export default async function instructions(
+  projectRoot: string,
+  app: ApplicationContract,
+  { logger }: typeof sinkStatic
+) {
   logger.action('Root').succeeded(projectRoot)
   const adonisrcPath = `${app.appRoot}/.adonisrc.json`
   const adonisrc = JSON.parse(String(fs.readFileSync(adonisrcPath, 'utf8')))
