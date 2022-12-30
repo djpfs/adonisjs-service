@@ -98,17 +98,6 @@
   },
   "adonisjs": {
     "instructions": "./build/instructions.js",
-    "instructionsMd": "./build/instructions.md",
-    "templates": {
-      "config": [
-        "service-interface.txt",
-        "service-provider.txt",
-        "service.txt"
-      ]
-    },
-    "types": "@djpfs/adonisjs-service",
-    "providers": [
-      "@djpfs/adonisjs-service"
-    ]
+    "instructionsMd": "./build/instructions.md"
   }
 }
